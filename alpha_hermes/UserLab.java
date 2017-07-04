@@ -8,48 +8,20 @@ import java.util.ArrayList;
  * Created by zeeshan on 28-03-2017.
  */
 
-public class UserLab {
+public class UserLab
+{
 
+ private String mAdminl;
 
-
-
-    private ArrayList<User> mUsers;
-    private static UserLab suserLab;
-    private Context mAppContext;
-
-
-
-
-    private UserLab(Context c)
-    {
-
-        mAppContext= c;
-
+    public UserLab(String mAdminl) {
+        this.mAdminl = mAdminl;
     }
 
-
-
-    private static UserLab get(Context c)
-    {
-        if(suserLab==null)
-        {
-            suserLab = new UserLab(c.getApplicationContext());
-        }
-
-        return suserLab;
+    public String getmAdminl() {
+        return mAdminl;
     }
 
-
-
-    public ArrayList<User> getmUsers()
-    {
-        return mUsers ;
+    public void setmAdminl(String mAdminl) {
+        this.mAdminl = mAdminl;
     }
-
-
-
-
-
-
-
 }

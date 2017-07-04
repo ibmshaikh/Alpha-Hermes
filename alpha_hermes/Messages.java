@@ -15,26 +15,42 @@ public class Messages  {
 
     private String mText;
     private String mName;
+    private String mGroupname ;
+
+    public String getmGroupname() {
+        return mGroupname;
+    }
+
+    public void setmGroupname(String mGroupname) {
+        this.mGroupname = mGroupname;
+    }
 
     public Messages(String mText, String mName) {
+
         this.mText = mText;
         this.mName = mName;
+
+    }
+
+    public Messages(String mText)
+    {
+        this.mText = mText;
     }
 
 
 public  Messages()
 {
-
     // TODO Well Sort of Nothing
-
 }
 
 
-    public String getmText() {
+    public String getmText()
+    {
         return mText;
     }
 
-    public void setmText(String mText) {
+    public void setmText(String mText)
+    {
         this.mText = mText;
     }
 

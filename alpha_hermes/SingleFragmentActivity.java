@@ -24,6 +24,9 @@ public abstract class SingleFragmentActivity extends FragmentActivity {
       //  setContentView();
 
 
+
+
+
         FragmentManager fm = getSupportFragmentManager();
       //  Fragment fragment = fm.findFragmentById();
 
@@ -36,6 +39,7 @@ public abstract class SingleFragmentActivity extends FragmentActivity {
 
 
         }
+
 
 
 
